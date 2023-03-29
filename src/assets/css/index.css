@@ -1,0 +1,14 @@
+:root {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-image: url("https://64.media.tumblr.com/51b7bd99eb5f042e144d2e03a181194e/tumblr_preeu18aTp1s26zs1o1_1280.gifv");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
