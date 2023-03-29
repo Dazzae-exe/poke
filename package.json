@@ -1,8 +1,10 @@
 {
   "name": "pokedex",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": "Christian Marín <chrismarin0607@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
