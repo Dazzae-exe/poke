@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply w-full min-h-screen;
+    }
+
     h1 {
         @apply text-3xl font-extrabold;
     }

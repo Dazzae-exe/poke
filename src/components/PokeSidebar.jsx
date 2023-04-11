@@ -1,6 +1,5 @@
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { pokeInfo } from "../lib/recoil/pokeInfo";
-import { getFullPokeList } from "../lib/recoil/pokeList";
 import { searchingPokemon } from "../lib/recoil/pokeSearch";
 import { getPokeValuesApi } from "../services/PokeAPI";
 
@@ -10,8 +9,8 @@ function PokeSidebar() {
   const rootUrl = import.meta.env.VITE_ROOT_URL_ALL_POKEMON;
   const [pokeInformation, setPokeInformation] = useRecoilState(pokeInfo);
 
-  const getPokemonSearch = async (e) => {
-    e.preventDefault();
+  const getPokemonSearch = async (evt) => {
+    evt.preventDefault();
     let searchInputValue = document.getElementById("searchInput");
     setPokeInformation(
       await getPokeValuesApi(rootUrl, searchInputValue.value.toLowerCase())
@@ -24,7 +23,7 @@ function PokeSidebar() {
       <form
         method="get"
         className="h-44 flex flex-col items-start w-full gap-y-4"
-        onSubmit={(e) => getPokemonSearch(e)}
+        onSubmit={(evt) => getPokemonSearch(evt)}
         id="pokeSearchForm"
       >
         <label htmlFor="search" className="flex items-end gap-x-1 text-xl font-bold">
